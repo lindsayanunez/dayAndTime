@@ -11,6 +11,6 @@ let meridiem = (hour >= 12)? " PM ":" AM ";
 
 function displayToday(){
   const todaySpace =document.querySelector('.today');
-  todaySpace.innerHTML = `Today is: ${dayofWeek}. Current time is : ${hour} AM : ${minute} : ${second}`;
+  todaySpace.innerHTML = `Today is: ${dayofWeek}. Current time is : ${hour} ${meridiem} : ${minute} : ${second}`;
 }
 
